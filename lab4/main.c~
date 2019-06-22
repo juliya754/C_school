@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+void swap(int* a, int* b)
+{
+  int buf = *a;
+  *b = *a;
+  *b = buf;
+}
+
+int main()
+{
+
+  int a = 4;
+  int b = 8;
+  printf("a = %d", a);
+  printf("b = %d", b);
+  swap(a,b);
+  printf("After swap: a = %d", a);
+  printf("b = %d", b);
+  
+  return 0;
+}
